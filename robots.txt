@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coach-kangaroo.github.io/index/sitemap.xml
