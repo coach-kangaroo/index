@@ -2,17 +2,42 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>袋鼠教練 Coach Kangaroo | 你的專業健身夥伴</title>
+  <title>台北青埔私人教練｜袋鼠教練 Coach Kangaroo 一對一健身・減脂</title>
   <link rel="icon" sizes="32x32" type="image/png" href="https://coach-kangaroo.github.io/index/images/favicon.png">
-  <meta name="description" content="想瘦身卻沒時間？「教練袋鼠」專為忙碌族設計 20 分鐘高效運動菜單。">
-  <meta name="keywords" content="袋鼠教練, Coach Kangaroo, 增肌, 減脂, 核心訓練, 私人教練">
-  <meta property="og:title" content="袋鼠教練 Coach Kangaroo">
+  <meta name="description" content="台北、桃園青埔自由教練「袋鼠教練」，10 年經驗、NASM / IFBB / AFAA / ISFA 國際認證。一對一私人教練課、減脂增肌、動作校正、筋膜放鬆，專為忙碌族設計高效運動菜單。">
+  <meta name="keywords" content="青埔自由教練, 青埔私人教練, 青埔健身教練, 桃園自由教練, 桃園私人教練, 台北自由教練, 台北私人教練, 袋鼠教練, Coach Kangaroo, 增肌, 減脂, 核心訓練, 私人教練">
+  <link rel="canonical" href="https://coach-kangaroo.github.io/index/">
+  <meta property="og:title" content="台北・青埔自由教練｜袋鼠教練 Coach Kangaroo">
+  <meta property="og:description" content="台北、桃園青埔自由教練，10 年經驗、四大國際認證，一對一私人教練課。">
+  <meta property="og:locale" content="zh_TW">
   <meta property="og:url" content="https://coach-kangaroo.github.io/index/">
   <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="https://coach-kangaroo.github.io/index/images/thumbnail.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "袋鼠教練 Coach Kangaroo",
+    "alternateName": ["台北自由教練 袋鼠教練", "青埔自由教練 袋鼠教練"],
+    "description": "台北、桃園青埔自由教練，提供一對一私人教練課、減脂增肌、動作校正與筋膜放鬆。",
+    "url": "https://coach-kangaroo.github.io/index/",
+    "image": "https://coach-kangaroo.github.io/index/images/thumbnail.png",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "City", "name": "台北市" },
+      { "@type": "Place", "name": "桃園市中壢區青埔" },
+      { "@type": "Place", "name": "桃園市大園區青埔" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ptkangaroo",
+      "https://www.facebook.com/share/1APfCNGyHf/"
+    ]
+  }
+  </script>
 
   <meta name="google-site-verification" content="ZPmdMq922L-fv_H_viydPI5XpmTav56wlMs01pL2q4U" />
 
@@ -56,8 +81,9 @@
       align-items: center;
     }
     .nav h1 {
-      font-size: 24px;
-      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
     .nav nav a {
       color: #fff;
@@ -79,7 +105,7 @@
 
     /* ===== 區塊設定 ===== */
     section {
-      background-color: #111
+      background-color: #111;
     }
     section h2 {
       text-align: center;
@@ -230,7 +256,6 @@
       overflow: hidden;
     }
 
-    /* 新增：卡片媒體的分頁指示點容器 */
     .card-media-dots {
       position: absolute;
       bottom: 10px;
@@ -251,22 +276,10 @@
 
     .card-media-dot.active {
       background: #ff8c00;
-      width: 12px; /* 啟動中的點稍微長一點，增加辨識度 */
+      width: 12px;
       border-radius: 4px;
     }
 
-    /* 優化：在手機版讓下一張圖露出一點邊緣 (Peek effect) */
-    @media (max-width: 768px) {
-      .media-scroller {
-        padding-right: 20px; /* 露出一點點下一張圖 */
-      }
-      .media-item {
-        flex: 0 0 95%; /* 寬度稍微縮小，讓下一張能被看見 */
-        margin-right: 10px;
-      }
-      .nav-btn { display: none; } /* 手機版不需要按鈕，靠滑動 */
-    }
-    /* 媒體容器 */
     .media-scroller {
       display: flex;
       width: 100%;
@@ -274,9 +287,9 @@
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
-      scrollbar-width: none; /* Firefox */
+      scrollbar-width: none;
     }
-    .media-scroller::-webkit-scrollbar { display: none; } /* Chrome */
+    .media-scroller::-webkit-scrollbar { display: none; }
 
     .media-item {
       flex: 0 0 100%;
@@ -290,7 +303,6 @@
       object-fit: cover;
     }
 
-    /* 電腦版切換按鈕 */
     .nav-btn {
       position: absolute;
       top: 50%;
@@ -347,7 +359,6 @@
       border-radius: 8px;
     }
 
-    /* ===== 社群資訊欄位調整 ===== */
     .bottom-info {
       display: flex;
       flex-direction: column;
@@ -374,7 +385,7 @@
       font-size: 15px;
     }
 
-    /* ===== iframe 設定 ===== */
+    /* ===== 表單體驗優化容器 ===== */
     #contact {
       padding: 80px 0 0;
       background-color: #111;
@@ -385,20 +396,21 @@
     #contact h2 {
       color: #fff;
     }
+    .form-wrapper {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
     #contact iframe {
       width: 100%;
-      height: 1000px;
+      height: 850px;
       border: none;
       display: block;
-      background-color: #fff;
-      border-radius: 12px;
+      border-radius: 8px;
     }
 
-    @media (max-width: 768px) {
-      .banner h2 { font-size: 28px; }
-      .bottom { flex-direction: column; align-items: center; }
-      .bottom-info { align-items: center; }
-    }
     /* ===== 健身工具整合區塊 ===== */
     .fitness-tools-section {
       padding: 80px 0;
@@ -414,7 +426,6 @@
       overflow: hidden;
       box-shadow: 0 15px 35px rgba(0,0,0,0.5);
     }
-    /* 分頁切換 */
     .tool-tabs {
       display: flex;
       background: #2a2a2a;
@@ -435,7 +446,6 @@
       background: #222;
       border-bottom: 3px solid #ff8c00;
     }
-    /* 內容容器 */
     .tool-content {
       padding: 30px;
       display: none;
@@ -443,7 +453,6 @@
     .tool-content.active {
       display: block;
     }
-    /* 表單元件 */
     .calc-group { margin-bottom: 20px; }
     .calc-group label { display: block; margin-bottom: 8px; color: #ff8c00; font-weight: bold; }
     .calc-group input, .calc-group select {
@@ -456,12 +465,45 @@
       border-radius: 10px;
       text-align: center;
     }
-    /* RM 專用表格 */
     .rm-table {
       width: 100%; margin-top: 20px; border-collapse: collapse; font-size: 14px;
     }
     .rm-table th, .rm-table td { padding: 10px; border-bottom: 1px solid #444; text-align: center; }
     .rm-table th { color: #ff8c00; }
+
+    /* ===== 右下角 LINE 懸浮按鈕 ===== */
+    .float-line-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #06C755;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      z-index: 999;
+      font-weight: bold;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .float-line-btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      background-color: #05b34c;
+    }
+    .float-line-btn svg { width: 24px; height: 24px; flex-shrink: 0; }
+
+    @media (max-width: 768px) {
+      .banner h2 { font-size: 28px; }
+      .bottom { flex-direction: column; align-items: center; }
+      .bottom-info { align-items: center; }
+      .media-scroller { padding-right: 20px; }
+      .media-item { flex: 0 0 95%; margin-right: 10px; }
+      .nav-btn { display: none; }
+      #contact iframe { height: 750px; }
+      .float-line-btn { bottom: 15px; right: 15px; padding: 10px 16px; font-size: 14px; }
+    }
   </style>
 </head>
 
@@ -470,10 +512,10 @@
 <header>
   <div class="container nav">
     <h1 class="logo">
-      Kangaroo
       <svg class="logo-icon" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M655.5 496.6c7.9-21.7 25.5-21.2 34.5-31.4 6.6-7.5 17.2-13.8 13.2-25.5-4.4-12.8-17-9.4-26.4-8.7-39.2 3.1-73.5 20.6-107.1 39.2-27.8 15.5-54.2 33-80.8 56.5 93.4 54.5 175.5 117.1 220.4 217.3-35.1 3.8-55.9-4.2-63.2-36.8-14.9-67.2-65.4-90.2-121.4-108.1-32.7-10.5-66.5-17.8-99.7-27.3-48-13.7-52.1-26.9-22.1-65.6 16.4-21.1 36.2-39.9 46.6-65.2 11.6-28.3 1.3-43.7-29-38.7-37.7 6.1-74.7 16.6-112 25.3-47.8 11.1-95.6 16.4-144.1 4.3-52.3-12.9-86.5-44.4-101.9-96.4 12.4-5.7 14.3 4.7 17.8 10.1 36.2 54 80.5 71.9 144.3 61 79.8-13.7 148.7-52 217.3-92 25.3-14.8 51.3-28.7 77.8-41.1 60.7-28.4 117.6-25.1 172 18.3 39.6 31.6 83.4 51.9 133.2 14.1-6.2-3.1-12.1-5.3-17.4-8.6-12.6-7.9-25.7-20.5-18-33.7 8.1-13.9 22.7 0.2 33.1 4.5 55 23.4 88.3 67.5 110.7 121.2 2.3 5.3 7.5 11.5 1.5 17.4-5.5 5.4-12.2 3-17.8 0-8.9-4.8-17.4-10.6-25.9-16.4-54.4-36.7-54.2-36.5-101.4 11.3-23.3 23.6-46.3 47.8-71.6 69-16.1 13.6-35.6 23.9-62.6 26z" fill="currentColor"/>
       </svg>
+      台北・青埔私人教練｜袋鼠教練 Coach Kangaroo
     </h1>
     <nav>
       <a href="#about">關於</a>
@@ -498,7 +540,7 @@
               <li>成果導向：告別停滯期，讓進步肉眼可見。</li>
             </ul>
             <br>
-            <a href="#contact" class="btn">立即預約諮詢</a>
+            <a href="#contact" class="btn">企業/個人預約諮詢</a>
           </div>
         </div>
       </div>
@@ -564,7 +606,7 @@
           10年經驗，只為解決你「練不出來」的痛。
         </p>
         <p>
-          拒絕健身房的推銷與公版課表，我用國際認證技術，換你一輩子的體態自由。為什麼我是你的最後一站？
+          服務地區：<b>台北</b>、<b>桃園青埔</b>（高鐵桃園站周邊）。身為台北・青埔自由教練，我拒絕健身房的推銷與公版課表，我用國際認證技術，換你一輩子的體態自由。為什麼我是你的最後一站？
         </p>
         <ul style="margin: 20px 0; padding-left: 20px;">
           <li><b>自由教練的優勢：</b>沒有業績壓力，我只對你的成果負責。</li>
@@ -574,6 +616,7 @@
       </div>
     </div>
   </section>
+
   <section id="courses">
     <div class="container">
       <h2 style="color: #fff;">課程內容</h2>
@@ -587,7 +630,7 @@
               <div class="media-item">
                 <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="movies/MOV_0128.mov" type="video/mp4">
-                  您的瀏覽器不支持影片播放。
+                  您的瀏覽器不支援影片播放。
                 </video>
               </div>
             </div>
@@ -606,7 +649,7 @@
             <button class="nav-btn prev-btn" onclick="scrollCard(this, -1)">❮</button>
             <button class="nav-btn next-btn" onclick="scrollCard(this, 1)">❯</button>
             <div class="media-scroller">
-              <div class="media-item"><img src="images/IMG_0436.webp" alt="體態雕塑2"></div>
+              <div class="media-item"><img src="images/IMG_0436.webp" alt="台北青埔私人教練-飲食控制與體態改造"></div>
             </div>
             <div class="card-media-dots">
               <span class="card-media-dot active"></span>
@@ -623,7 +666,7 @@
             <button class="nav-btn prev-btn" onclick="scrollCard(this, -1)">❮</button>
             <button class="nav-btn next-btn" onclick="scrollCard(this, 1)">❯</button>
             <div class="media-scroller">
-              <div class="media-item"><img src="images/IMG_0422.webp" alt="體態雕塑1"></div>
+              <div class="media-item"><img src="images/IMG_0422.webp" alt="台北青埔私人教練-動作調整與筋膜放鬆"></div>
             </div>
             <div class="card-media-dots">
               <span class="card-media-dot active"></span>
@@ -642,10 +685,10 @@
             <div class="media-scroller">
               <div class="media-item">
                 <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
-                    <source src="movies/MOV_0129.mov" type="video/mp4">
-                    您的瀏覽器不支持影片播放。
-                  </video>
-                </div>
+                  <source src="movies/MOV_0129.mov" type="video/mp4">
+                  您的瀏覽器不支援影片播放。
+                </video>
+              </div>
             </div>
             <div class="card-media-dots">
               <span class="card-media-dot active"></span>
@@ -656,88 +699,88 @@
             <p>針對核心與線條強化，打造理想視覺曲線，找回自信體態。</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-<section id="fitness-tools" class="fitness-tools-section">
-  <div class="container">
-    <h2>科學數據檢測</h2>
-    <div class="tool-box">
-      <div class="tool-tabs">
-        <button class="tab-btn active" onclick="switchTool(event, 'rm-calculator')">1RM 力量估算</button>
-        <button class="tab-btn" onclick="switchTool(event, 'tdee-calculator')">TDEE 熱量計算</button>
-      </div>
+  <section id="fitness-tools" class="fitness-tools-section">
+    <div class="container">
+      <h2>科學數據檢測</h2>
+      <div class="tool-box">
+        <div class="tool-tabs">
+          <button class="tab-btn active" onclick="switchTool(event, 'rm-calculator')">1RM 力量估算</button>
+          <button class="tab-btn" onclick="switchTool(event, 'tdee-calculator')">TDEE 熱量計算</button>
+        </div>
 
-      <div id="rm-calculator" class="tool-content active">
-        <div class="calc-group">
-          <label>訓練重量 (kg)</label>
-          <input type="number" id="weight-input" placeholder="例如：60" oninput="calculateRM()">
+        <div id="rm-calculator" class="tool-content active">
+          <div class="calc-group">
+            <label for="weight-input">訓練重量 (kg)</label>
+            <input type="number" id="weight-input" placeholder="例如：60" oninput="calculateRM()">
+          </div>
+          <div class="calc-group">
+            <label for="reps-input">重複次數 (reps)</label>
+            <input type="number" id="reps-input" placeholder="例如：10" oninput="calculateRM()">
+          </div>
+          <div class="calc-result-box">
+            <p>估計最大力量 (1RM)</p>
+            <div><span style="font-size: 48px; font-weight: 800; color: #fff;" id="rm-result">0</span><span style="color: #aaa; margin-left: 5px;">kg</span></div>
+            <table class="rm-table">
+              <thead>
+                <tr><th>強度</th><th>重量 (kg)</th><th>建議次數</th></tr>
+              </thead>
+              <tbody id="rm-details"></tbody>
+            </table>
+          </div>
         </div>
-        <div class="calc-group">
-          <label>重複次數 (reps)</label>
-          <input type="number" id="reps-input" placeholder="例如：10" oninput="calculateRM()">
-        </div>
-        <div class="calc-result-box">
-          <p>估計最大力量 (1RM)</p>
-          <div><span style="font-size: 48px; font-weight: 800; color: #fff;" id="rm-result">0</span><span style="color: #aaa; margin-left: 5px;">kg</span></div>
-          <table class="rm-table">
-            <thead>
-              <tr><th>強度</th><th>重量 (kg)</th><th>建議次數</th></tr>
-            </thead>
-            <tbody id="rm-details"></tbody>
-          </table>
-        </div>
-      </div>
 
-      <div id="tdee-calculator" class="tool-content">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-            <div class="calc-group">
-                <label>性別</label>
-                <select id="t-gender" onchange="calcTDEE()">
-                    <option value="male">男</option>
-                    <option value="female">女</option>
-                </select>
-            </div>
-            <div class="calc-group">
-                <label>年齡</label>
-                <input type="number" id="t-age" placeholder="歲" oninput="calcTDEE()">
-            </div>
+        <div id="tdee-calculator" class="tool-content">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div class="calc-group">
+                  <label for="t-gender">性別</label>
+                  <select id="t-gender" onchange="calcTDEE()">
+                      <option value="male">男</option>
+                      <option value="female">女</option>
+                  </select>
+              </div>
+              <div class="calc-group">
+                  <label for="t-age">年齡</label>
+                  <input type="number" id="t-age" placeholder="歲" oninput="calcTDEE()">
+              </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div class="calc-group">
+                  <label for="t-height">身高 (cm)</label>
+                  <input type="number" id="t-height" placeholder="cm" oninput="calcTDEE()">
+              </div>
+              <div class="calc-group">
+                  <label for="t-weight">體重 (kg)</label>
+                  <input type="number" id="t-weight" placeholder="kg" oninput="calcTDEE()">
+              </div>
+          </div>
+          <div class="calc-group">
+            <label for="t-activity">活動量</label>
+            <select id="t-activity" onchange="calcTDEE()">
+              <option value="1.2">久坐 (辦公族、很少運動)</option>
+              <option value="1.375">輕量 (每週運動 1-3 天)</option>
+              <option value="1.55">中量 (每週運動 3-5 天)</option>
+              <option value="1.725">高量 (每週運動 6-7 天)</option>
+              <option value="1.9">極高量 (運動員、體力勞動)</option>
+            </select>
+          </div>
+          <div class="calc-result-box">
+            <p>基礎代謝 (BMR): <span id="bmr-res">0</span> kcal</p>
+            <div style="margin: 10px 0; font-size: 24px;">TDEE: <span id="tdee-res" style="color:#ff8c00; font-weight:bold;">0</span> kcal</div>
+            <div id="tdee-advice" style="font-size: 13px; text-align: left; color: #ccc; border-top: 1px solid #444; padding-top: 10px;"></div>
+          </div>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-            <div class="calc-group">
-                <label>身高 (cm)</label>
-                <input type="number" id="t-height" placeholder="cm" oninput="calcTDEE()">
-            </div>
-            <div class="calc-group">
-                <label>體重 (kg)</label>
-                <input type="number" id="t-weight" placeholder="kg" oninput="calcTDEE()">
-            </div>
-        </div>
-        <div class="calc-group">
-          <label>活動量</label>
-          <select id="t-activity" onchange="calcTDEE()">
-            <option value="1.2">久坐 (辦公族、很少運動)</option>
-            <option value="1.375">輕量 (每週運動 1-3 天)</option>
-            <option value="1.55">中量 (每週運動 3-5 天)</option>
-            <option value="1.725">高量 (每週運動 6-7 天)</option>
-            <option value="1.9">極高量 (運動員、體力勞動)</option>
-          </select>
-        </div>
-        <div class="calc-result-box">
-          <p>基礎代謝 (BMR): <span id="bmr-res">0</span> kcal</p>
-          <div style="margin: 10px 0; font-size: 24px;">TDEE: <span id="tdee-res" style="color:#ff8c00; font-weight:bold;">0</span> kcal</div>
-          <div id="tdee-advice" style="font-size: 13px; text-align: left; color: #ccc; border-top: 1px solid #444; padding-top: 10px;"></div>
-        </div>
+        <p style="font-size: 11px; color: #ff8c00; padding: 15px; text-align: center;">* 工具結果僅供參考，訓練與飲食計畫請諮詢專業教練。</p>
       </div>
-      <p style="font-size: 11px; color: #ff8c00; padding: 15px; text-align: center;">* 工具結果僅供參考，訓練與飲食計畫請諮詢專業教練。</p>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="news">
     <div class="container" style="padding: 80px 20px;">
-      <h2 style="color: #fff;">最新諮詢</h2>
       <div style="background-color: #fff; padding: 5px; border-radius: 12px;display: flex; justify-content: center;">
       <!-- IG影片插入開頭 -->
      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DU5VzSKiSWQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DU5VzSKiSWQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">在 Instagram 查看這則貼文</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DU5VzSKiSWQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">袋鼠教練（@ptkangaroo）分享的貼文</a></p></div></blockquote><script async src="//www.instagram.com/embed.js"></script>
@@ -745,11 +788,12 @@
       </div>
     </div>
   </section>
+
   <section id="contact">
     <div class="container" style="padding: 80px 20px;">
       <h2 style="color: #fff;">預約諮詢</h2>
-      <div style="background-color: #fff; padding: 5px; border-radius: 12px;">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7yG0wJcU_krwDlvL1Cxs3Qys2I_kAA0BZe-Eot3ePSMsMog/viewform?embedded=true" >載入中…</iframe>
+      <div class="form-wrapper">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7yG0wJcU_krwDlvL1Cxs3Qys2I_kAA0BZe-Eot3ePSMsMog/viewform?embedded=true" loading="lazy" title="預約諮詢表單">載入中…</iframe>
       </div>
     </div>
   </section>
@@ -759,8 +803,8 @@
   <div class="container">
     <div class="bottom">
       <div class="bottom-map">
-        <span>※ 地點為租借場地</span>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.70213!2d121.54!3d25.04!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAyJzI0LjAiTiAxMjHCsDMyJzI0LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1625123456789" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <span>※ 地點為租借場地（高鐵桃園站/青埔周邊）</span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14468.971578326243!2d121.2052103!3d25.0139281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823c12f51eb0d%3A0xb35a09ed79109cfd!2z6auY6JB1R1IyNjPmsLTopLnnq5A!5e0!3m2!1szh-TW!2stw!4v1700000000000!5m2!1szh-TW!2stw" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" title="桃園青埔服務據點區域"></iframe>
       </div>
 
       <div class="bottom-info">
@@ -771,7 +815,7 @@
 
         <a href="https://line.me/R/ti/p/@284dbvpm" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M12 .5C5.385.5 0 4.898 0 10.303c0 4.841 4.27 8.897 10.035 9.668.391.083.923.26 1.058.594.12.303.079.771.038 1.087l-.164 1.026c-.045.303-.24 1.193 1.049.649 1.291-.542 6.916-4.104 9.436-7.019 1.724-1.9 2.548-3.847 2.548-6.005C24 4.898 18.615.5 12 .5zM7.303 13.517H4.917a.636.636 0 0 1-.63-.633V8.083c0-.347.285-.634.63-.634.348 0 .63.287.63.634v4.167h1.756a.634.634 0 0 1 0 1.267zm2.466-.633a.634.634 0 0 1-.631.633.633.633 0 0 1-.627-.633V8.083c0-.347.282-.634.63-.634.346 0 .628.287.628.634zm5.741 0a.633.633 0 0 1-1.141.379l-2.443-3.338v2.958a.632.632 0 0 1-.631.633.632.632 0 0 1-.626-.633v-4.8a.63.63 0 0 1 .624-.632c.195 0 .375.105.495.256l2.462 3.351V8.083c0-.347.282-.634.63-.634.345 0 .63.287.63.634zm3.855-3.035a.634.634 0 0 1 0 1.269H17.61v1.132h1.755a.633.633 0 0 1 0 1.267h-2.386a.633.633 0 0 1-.627-.633V8.083c0-.347.282-.634.63-.634h2.386c.346 0 .627.287.627.634a.63.63 0 0 1-.63.634H17.61v1.132z"/></svg>
-          <span>官方 LINE 諮詢 (桃園)</span>
+          <span>官方 LINE 諮詢 (桃園青埔)</span>
         </a>
 
         <a href="https://www.facebook.com/share/1APfCNGyHf/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
@@ -801,6 +845,15 @@
   </div>
 </footer>
 
+<!-- 右下角懸浮 LINE 按鈕 -->
+<a href="https://line.me/R/ti/p/@837yqmpe" target="_blank" rel="noopener noreferrer" class="float-line-btn" aria-label="LINE 快速諮詢">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M12 .5C5.385.5 0 4.898 0 10.303c0 4.841 4.27 8.897 10.035 9.668.391.083.923.26 1.058.594.12.303.079.771.038 1.087l-.164 1.026c-.045.303-.24 1.193 1.049.649 1.291-.542 6.916-4.104 9.436-7.019 1.724-1.9 2.548-3.847 2.548-6.005C24 4.898 18.615.5 12 .5zM7.303 13.517H4.917a.636.636 0 0 1-.63-.633V8.083c0-.347.285-.634.63-.634.348 0 .63.287.63.634v4.167h1.756a.634.634 0 0 1 0 1.267zm2.466-.633a.634.634 0 0 1-.631.633.633.633 0 0 1-.627-.633V8.083c0-.347.282-.634.63-.634.346 0 .628.287.628.634zm5.741 0a.633.633 0 0 1-1.141.379l-2.443-3.338v2.958a.632.632 0 0 1-.631.633.632.632 0 0 1-.626-.633v-4.8a.63.63 0 0 1 .624-.632c.195 0 .375.105.495.256l2.462 3.351V8.083c0-.347.282-.634.63-.634.345 0 .63.287.63.634zm3.855-3.035a.634.634 0 0 1 0 1.269H17.61v1.132h1.755a.633.633 0 0 1 0 1.267h-2.386a.633.633 0 0 1-.627-.633V8.083c0-.347.282-.634.63-.634h2.386c.346 0 .627.287.627.634a.63.63 0 0 1-.63.634H17.61v1.132z"/></svg>
+  <span>LINE 諮詢</span>
+</a>
+
+<!-- IG 嵌入腳本移至頁尾非阻塞載入 -->
+<script async src="//www.instagram.com/embed.js"></script>
+
 <script>
 // 輪播圖功能
 let currentSlide = 0;
@@ -826,19 +879,20 @@ function goToSlide(index) {
   showSlide(currentSlide);
 }
 
-// 自動輪播，每 5 秒切換一次
 setInterval(nextSlide, 5000);
+
 // 課程卡片捲動邏輯
 function scrollCard(btn, direction) {
   const wrapper = btn.parentElement;
   const scroller = wrapper.querySelector('.media-scroller');
-  const scrollAmount = scroller.clientWidth; // 每次捲動一張卡片的寬度
+  const scrollAmount = scroller.clientWidth;
 
   scroller.scrollBy({
     left: direction * scrollAmount,
     behavior: 'smooth'
   });
 }
+
 document.querySelectorAll('.media-scroller').forEach(scroller => {
   scroller.addEventListener('scroll', () => {
     const index = Math.round(scroller.scrollLeft / scroller.clientWidth);
@@ -848,6 +902,7 @@ document.querySelectorAll('.media-scroller').forEach(scroller => {
     });
   });
 });
+
 // 分頁切換功能
 function switchTool(evt, toolId) {
   const contents = document.getElementsByClassName("tool-content");
@@ -858,7 +913,7 @@ function switchTool(evt, toolId) {
   evt.currentTarget.classList.add("active");
 }
 
-// 1. RM 計算邏輯 (維持原本公式與表格)
+// 1. RM 計算邏輯
 function calculateRM() {
   const weight = parseFloat(document.getElementById('weight-input').value);
   const reps = parseFloat(document.getElementById('reps-input').value);
